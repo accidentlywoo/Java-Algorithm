@@ -16,6 +16,6 @@ public class PrimeNumber1 {
 				System.out.println(n);
 		}
 		
-		System.out.println("³ª´°¼ÀÀ» ¼öÇàÇÑ È½¼ö : "+ counter);
+		System.out.println("ë‚˜ëˆ—ì…ˆì„ ìˆ˜í–‰í•œ íšŸìˆ˜ : "+ counter);
 	}
 }

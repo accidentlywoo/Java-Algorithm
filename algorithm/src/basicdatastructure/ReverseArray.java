@@ -6,8 +6,7 @@ public class ReverseArray {
 	static void swap(int[] a, int idx1, int idx2) {
 		int t = a[idx1]; a[idx1] = a[idx2]; a[idx2] = t;
 	}
-	
-	//¹è¿­ aÀÇ ¿ä¼Ò¸¦ ¿ª¼øÀ¸·Î Á¤·Ä
+
 	static void reverse(int[] a) {
 		for(int i =0; i < a.length / 2; i++)
 			swap(a, i, a.length - i -1);
@@ -16,7 +15,7 @@ public class ReverseArray {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.println("¿ä¼Ú¼ö : ");
+		System.out.println("ï¿½ï¿½Ú¼ï¿½ : ");
 		int num = stdIn.nextInt();
 		
 		int[] x = new int[num];
@@ -28,7 +27,7 @@ public class ReverseArray {
 		
 		reverse(x);
 		
-		System.out.println("¿ä¼Ò¸¦ ¿ª¼øÀ¸·Î Á¤·ÄÇß½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.");
 		for( int i = 0; i < num; i++ )
 			System.out.println("x["+ i +"] = "+ x[i]);
 	}
