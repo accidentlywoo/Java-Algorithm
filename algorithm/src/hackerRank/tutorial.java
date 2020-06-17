@@ -1,15 +1,7 @@
 package hackerRank;
 
-import org.apache.commons.lang.ArrayUtils;
-import sun.security.util.ArrayUtil;
-
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class tutorial {
 
@@ -19,7 +11,7 @@ public class tutorial {
         int point = 0;
         char[] arr = s.toCharArray();
         for(char i : arr){
-            ArrayUtils.indexOf(arr, i);
+            //Arrays.indexOf(arr, i);
         }
         for(int i = 0; i < n; i++){
             if(String.valueOf(s.charAt(i)) == "U"){
