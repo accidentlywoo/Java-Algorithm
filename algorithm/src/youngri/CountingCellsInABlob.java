@@ -10,6 +10,6 @@ public class CountingCellsInABlob {
 			+ "else"
 			+ 		"set the color of the pixel (x, y) to a red color;"
 			+ 		"the result is l plus the number of cells in each piece of"
-			+			"the blob that includes a nearest neighbour;"
+			+			"the blob that includes a nearest neighbour;";
 
 }

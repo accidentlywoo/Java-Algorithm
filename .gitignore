@@ -1,3 +1,4 @@
 algorithm/.classpath/*
 algorithm/.settings/*
-/.metadata/
+/.metadata
+algorithm/out/*
