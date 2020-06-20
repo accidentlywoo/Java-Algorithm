@@ -28,21 +28,21 @@ public class ComparatorPractice {
         fruits[3] = new Fruit("Banana",90);
 
         Comparator<Fruit> nameComparator = new Comparator<Fruit>() {
-            @Override
+            @Override // Anonymous Class
             public int compare(Fruit fruit1, Fruit fruit2) {
                 return fruit1.name.compareTo(fruit2.name);
             }
         };
-        Comparator<Fruit> quantityComparator = new Comparator<Fruit>() {
-            @Override
+        /*
+        제네릭 프로그래밍
+         */
+        Arrays.sort(fruits, nameComparator);
+        System.out.println(Arrays.toString(fruits));
+        Arrays.sort(fruits, new Comparator<Fruit>() {
             public int compare(Fruit fruit1, Fruit fruit2) {
                 return fruit1.quantity - fruit2.quantity;
             }
-        };
-
-        Arrays.sort(fruits, nameComparator);
-        System.out.println(Arrays.toString(fruits));
-        Arrays.sort(fruits, quantityComparator);
+        });
         System.out.println(Arrays.toString(fruits));
     }
 }
