@@ -1,4 +1,4 @@
-package youngri;
+package youngri.sort;
 
 public class MergeSort {
     void merge(int data[], int p, int q, int r){

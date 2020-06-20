@@ -1,4 +1,4 @@
-package youngri;
+package youngri.recursion;
 
 public class CountingCellsInABlob {
 	String sudoCode =

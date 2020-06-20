@@ -1,4 +1,4 @@
-package youngri;
+package hackerRank;
 
 import java.util.Arrays;
 
