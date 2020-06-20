@@ -79,7 +79,17 @@ Arrays.sort(fruits); //name 필드 배교 sorting!
 
 2가지 이상의 기준으로 정렬하려면? -> ***Comparator인터페이스를 사용해야한다.***
 ```
-
+omparator<Fruit> nameComparator = new Comparator<Fruit>() {
+    @Override // Anonymous Class
+    public int compare(Fruit fruit1, Fruit fruit2) {
+        return fruit1.name.compareTo(fruit2.name);
+    }
+};
+Comparator<Fruit> quantityComparator = new Comparator<Fruit>() {
+    public int compare(Fruit fruit1, Fruit fruit2) {
+        return fruit1.quantity - fruit2.quantity;
+    }
+};
 ```
 
 ## ArrayList
