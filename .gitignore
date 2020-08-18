@@ -1,4 +1,11 @@
 algorithm/.classpath/*
 algorithm/.settings/*
 /.metadata
+out/*
 algorithm/out/*
+/out/production/Java-Algorithm/hackerRank/BalancingElements.class
+/out/production/Java-Algorithm/hackerRank/BalancingParenthese.class
+/out/production/Java-Algorithm/hackerRank/LongetKInterspaceSubstring.class
+/algorithm/src/hackerRank/BalancingElements.java
+/algorithm/src/hackerRank/BalancingParenthese.java
+/algorithm/src/hackerRank/LongetKInterspaceSubstring.java

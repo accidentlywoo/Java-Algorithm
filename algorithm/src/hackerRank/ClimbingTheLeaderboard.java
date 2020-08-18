@@ -5,26 +5,27 @@ import java.util.*;
 public class ClimbingTheLeaderboard {
     static int[] climbingLeaderboard(int[] scores, int[] alice) {
         int scoresLen = scores.length;
-        int[] scoreRank = new int[scoresLen];
-        scoreRank[0] = 1;
+        List<Integer> scoreList = new ArrayList<>();
+        scoreList.add(scores[0]);
+        int scLen = scoreList.size();
         int aliceLen = alice.length;
         int[] result = new int[aliceLen];
         for(int i = 1; i < scoresLen; i ++){
-            if(scores[i-1]==scores[i])
-                scoreRank[i] = scoreRank[i-1];
-            else
-                scoreRank[i] = scoreRank[i-1]+1;
+            if(scores[i-1] !=scores[i])
+                scoreList.add(scores[i]);
         }
-        Arrays.sort(alice);
+        System.out.println(scoreList);
         for(int i = 0; i < aliceLen; i++){
-            for(int j = 0; j < scoresLen; j++){
-                if(alice[i] >= scores[j]){
-                    result[i] = scoreRank[j];
+            for(int j = 0; j < scLen;j++){
+                if(alice[i] > scoreList.get(j)){
+                    result[i] = scoreList.indexOf(scores[j])+1;
+                    break;
+                }else if(alice[i] == scoreList.get(j)){
+                    result[i] = scoreList.indexOf(scores[j])+1;
                     break;
                 }
-                result[i] = scoreRank[scoresLen-1]+1;
+                result[i] = scoreList.indexOf(scores[j])+2;
             }
-
         }
         return result;
     }
